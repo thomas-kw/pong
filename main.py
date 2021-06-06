@@ -35,10 +35,14 @@ while game_is_on:
         ball.bounce_x()
 
     if ball.xcor() > 380:
+        scoreboard.l_point()
+        scoreboard.update_scoreboard()
         ball.reset_position()
         ball.bounce_x()
 
     if ball.xcor() < -380:
+        scoreboard.r_point()
+        scoreboard.update_scoreboard()
         ball.reset_position()
         ball.bounce_x()
 
